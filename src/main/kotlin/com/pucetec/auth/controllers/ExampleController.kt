@@ -24,4 +24,19 @@ class ExampleController {
         return "Admin action performed successfully!"
     }
 
+    @GetMapping("/secure-data")
+    fun secureData(): String {
+        return "Bienvenidos ADMIN y SUPERUSER!"
+    }
+
+    @GetMapping("/access")
+    fun access(): String {
+        return "Bienvenidos USER y SUPERUSER!"
+    }
+
+    @GetMapping("/controls")
+    fun controls(): String {
+        return "Bienvenido ADMIN y USER!"
+    }
+
 }
